@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(68, 67, 67, 0.233);
+    font-family: sans-serif;
+    
+}
+/* hero area */
+.hero-area{
+    background-color: rgba(3, 87, 156, 0.678);
+    /* height: 100vh; */
+}
+
+/* navbar */
+
+.navbar  ul li a:hover,
+.navbar ul li a .active{
+    color: rgb(0, 207, 235);
+    
+}
+.navbar{
+    background-color:  rgba(3, 87, 156, 0.226);
+}
+.navbar .dropdown-menu li a{
+   color: black;
+
+}
+.navbar  ul li{
+    padding: 0 15px;
+}
+.navbar ul li a{
+    color: rgb(255, 255, 255);
+}
+.btn{
+    background-color:rgba(255, 255, 255, 0);
+    color: white;
+    width: 120px;
+    padding: 5px;
+    border-radius: 30px;
+    border:3px solid rgb(4, 196, 230);
+}
+.btn:hover{
+    background-color: rgb(4, 196, 230);
+}
+/* body area */
+.img-box{
+    width: 500px;
+}
+.img-box img{
+    width: 100%;
+}
+.img-box .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+@media only screen and (max-width:767px){
+    .img-box{
+        margin-top: 80px;
+        order: 4;
+        
+    }
+}
+/* logo section */
+.logo .img-logo  {
+    max-width: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 45px;
+
+}
+.logo .img-logo img{
+    width: 100%;
+    color: violet;
+    filter: grayscale(100);
+    transition: all .5s ease-in-out;
+
+}
+.logo .img-logo img:hover{
+    filter: none;
+    scale: 1.1;
+}
+/* about section */
+.about{
+    position: relative;
+    
+    
+}
+.about h2{
+    font-weight: 900;
+    color: rgba(1, 31, 71, 0.836);
+}
+.about::after{
+    content: "";
+    width: 77px;
+    height: 5px;
+    background-color: rgba(7, 84, 250, 0.897);
+    position: absolute;
+    top: 61px;
+    left: 46%;
+    
+}
+.about::before{
+    content: '';
+    width: 154px;
+    height: 2px;
+    background-color: rgb(193, 199, 255);
+    position: absolute;
+    top: 63px;
+    left: 42%;
+}
+/* acoriden */
+.fivth .img-acord{
+    position: relative;
+    transition: .9s;
+}
+.fivth .img-acord:hover{
+    bottom: 7px;
+    
+
+}
+/* portfoilo */
+.portfolio ul {
+    list-style: none;
+}
+.portfolio ul li{
+    padding: 0 15px;
+    margin: 13px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    color: black;
+}
+.portfolio ul li:hover , .filter-active{
+    background-color: rgb(0, 74, 233);
+}
+.portfolio .portfolio-item{
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-item .portfolio-img{
+    overflow: hidden;
+    
+
+}
+.portfolio .portfolio-item .portfolio-img img{
+    transition: all .6s;
+
+}
+.portfolio .portfolio-item .portfolio-info{
+    opacity: 0;
+    
+    /* left: 15px; */
+    /* bottom: 0; */
+    z-index: 3;
+    /* right: 15px; */
+    transition: all .3s;
+    background-color: rgba(55, 81,126,.8);
+    padding: 0px 15px;
+
+}
+.portfolio .portfolio-item .portfolio-info h4{
+
+}
+.portfolio .portfolio-item .portfolio-info p{
+
+}
+.portfolio .portfolio-item .portfolio-info .previwe-link ,
+.portfolio .portfolio-item .portfolio-info .details-link{
+
+    right: 40px;
+    font-size: 24px;
+    top: calc(50% - 18px);
+    color: #fff;
+    transition: .3s; 
+
+}
+.portfolio .portfolio-item .portfolio-info .details-link{
+    right: 10px;
+}
+.portfolio .portfolio-item:hover .portfolio-img img{
+    transform: scale(1.15);
+}
+.portfolio .portfolio-item:hover .portfolio-info{
+    opacity: 1;
+}
+/* team */
+.team-title{
+    position: relative;
+}
+.team-title::after{
+    content: "";
+    width: 77px;
+    height: 5px;
+    background-color: rgba(7, 84, 250, 0.897);
+    position: absolute;
+    top: 61px;
+    left: 46%;
+    
+}
+.team-title::before{
+    content: '';
+    width: 154px;
+    height: 2px;
+    background-color: rgb(193, 199, 255);
+    position: absolute;
+    top: 63px;
+    left: 42%;
+}
+.team .ticket{
+    transition: all .6s;
+}
+.ticket:hover{
+    transform: translatey(-8px);
+}
+.team .ticket .media {
+    background-color: brown;
+}
+.ticket{
+    box-shadow: 4px 4px 10px 0px rgba(80, 78, 78, 0.342);
+}
+/* preloader */
+
+.back-to-top{
+    position: fixed;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    right: 15px;
+    bottom: 15px;
+    z-index: 45;
+    background-color: rgba(6, 107, 240, 0.185);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all .4s;
+}
+.back-to-top a {
+    font-size: 24px;
+    color: #91ff00;
+}
+.back-to-to.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
